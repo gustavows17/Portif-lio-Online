@@ -4,3 +4,70 @@
 footer {
     margin-top: 1500px;
 }
+
+.Logo_cabecalho {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#Cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #1C1C1C;
+    border-bottom: 1px solid #3333338e;
+    border-radius: 0px;
+}
+
+.botao_menu {
+    background-color: gray
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: inline-block;
+    -webkit-text-fill-color: red;
+}
+
+#apresentacao {
+    margin-left: 150px;
+    font-size: 3.5em;
+
+}
+
+.welcome {
+    margin: 0px;
+}
+
+.Menu_cabecalho {
+    margin: 50px;
+    
+}
+
+.Logo_texto {
+    color: red;
+}
+
+.botaoinf {
+        background-color: gray
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3px 3px;
+    display: inline-block;
+    -webkit-text-fill-color: red;
+    margin-top: 30px;
+    margin-left: 150px;
+    
+}
+
+.formacaohome {
+    margin-left: 150px;
+}
