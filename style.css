@@ -1,17 +1,14 @@
 @charset "UTF-8";
 
 
-footer {
-    margin-top: 1500px;
+@font-face {
+    font-family: "Futuro";
+    src: url("./fonts/Futuro.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-.Logo_cabecalho {
-    font-size: 1.5em;
-}
 
-a {
-    text-decoration: none;
-}
 
 #Cabecalho {
     position: fixed;
@@ -28,6 +25,18 @@ a {
     border-radius: 0px;
 }
 
+.Logo_cabecalho {
+    font-size: 0.7em;
+}
+
+.Logo_texto {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
 .botao_menu {
     background-color: gray
     border: 1px solid;
@@ -35,16 +44,7 @@ a {
     padding: 5px 15px;
     display: inline-block;
     -webkit-text-fill-color: red;
-}
-
-#apresentacao {
-    margin-left: 150px;
-    font-size: 3.5em;
-
-}
-
-.welcome {
-    margin: 0px;
+    font-weight: bold;
 }
 
 .Menu_cabecalho {
@@ -52,8 +52,28 @@ a {
     
 }
 
-.Logo_texto {
+.apresentacao {
+    margin-left: 150px;
+    font-size: 3.5em;
+}
+
+.welcome {
+    margin-bottom: 150px;
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+.im {
     color: red;
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+.p {
+    margin-left: 170px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    
 }
 
 .botaoinf {
@@ -64,10 +84,138 @@ a {
     display: inline-block;
     -webkit-text-fill-color: red;
     margin-top: 30px;
-    margin-left: 150px;
-    
+    margin-left: 170px;
+    margin-bottom: 70px;
+    font-weight: bold;
 }
 
 .formacaohome {
     margin-left: 150px;
+    margin-top: -100px;
+}
+
+.formacao_1home {
+    margin-top: -20px;
+    position: relative;
+    left: 300px;
+    top: 114px;
+    margin-left: 10px;
+}
+
+.formacao_2home {
+    margin-top: 50px;
+}
+
+.infformacao {
+    font-size: 1.5em;
+    color: red;
+}
+
+.infformacaop {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.sobre {
+    margin-left: 150px;
+    font-size: 0.9em;
+    color: red;
+    margin-top: 100px;
+}
+
+.sobre_titulo {
+    margin-left: 150px;
+    font-size: 2.5em;
+    margin-top: 17px;
+}
+
+.construindo {
+    color: ;
+}
+
+.ofuturo {
+    color: red;
+    font-family: "Futuro", sans-serif; 
+    margin-top: -50px;
+}
+
+.sobre_texto {
+    margin-left: 150px;
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.p1 {
+    margin-bottom: -20px;
+}
+
+.p2 {
+    margin-bottom: -20px;
+}
+
+.formacao_sobre {
+    margin-left: 1000px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    margin-top: -440px;
+}
+
+.formacao_titulo {
+    
+    font-size: 0.9em;
+    color: red;
+    margin-bottom: 55px;
+}
+
+.formacao1 {
+    margin-top: 5px;
+}
+
+.pinfo {
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.datas {
+    color: gray;
+    margin-left: 700px;
+    margin-top: -70px;
+    
+}
+
+.status {
+    color: gray;
+    font-size: 1.1em;
+}
+
+.abertoopr {
+    color: red;
+}
+
+#hab {
+    font-size: 0.9em;
+    margin-left: 150px;
+    margin-top: 100px;
+    color: red;
+}
+
+.techstack {
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.tech {
+    color: ;
+}
+
+.stack {
+    color: red;
+    margin-top: -50px;
+    font-family: "Futuro", sans-serif;
+}
+
+
+footer {
+    margin-top: 1500px;
 }
