@@ -8,6 +8,24 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0 auto;
+    background-color: #060606;
+}
+
+h3 {
+    color: white;
+    font-family: monospace;
+}
+
+.hr {
+    border: none;
+    border-top: 0.5px solid rgb(49, 49, 49);
+    max-width: 80%;
+    
+}
 
 
 #Cabecalho {
@@ -20,17 +38,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: #1C1C1C;
+    background-color: #060606f6;
     border-bottom: 1px solid #3333338e;
     border-radius: 0px;
 }
 
 .Logo_cabecalho {
-    font-size: 0.7em;
-}
-
-.Logo_texto {
+    font-size: 0.9em;
     color: red;
+    font-family: monospace;
 }
 
 a {
@@ -38,111 +54,109 @@ a {
 }
 
 .botao_menu {
-    background-color: gray
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 5px 15px;
+    padding: 8px 15px;
     display: inline-block;
-    -webkit-text-fill-color: red;
-    font-weight: bold;
+    color: red;
+    font-family: monospace;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.botao_menu:hover {
+    color: gray;
+    border-color: gray;
 }
 
 .Menu_cabecalho {
-    margin: 50px;
-    
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
 }
 
 .apresentacao {
-    margin-left: 150px;
+    width: min(1200px, 90%);
+    margin: 200px auto 0;
     font-size: 3.5em;
 }
 
 .welcome {
-    margin-bottom: 150px;
-    margin-top: 200px;
+    margin: 0 0 100px;
     font-size: 30px;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .im {
     color: red;
-    font-size: 100px;
+    font-size: 7rem;
     margin-bottom: 100px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 2000;
+    
 }
 
 .p {
-    margin-left: 170px;
+    width: min(1200px, 90%);
+    margin: 0 auto 50px;
     font-size: 1.2em;
-    margin-bottom: 50px;
+    color: white;
     
 }
 
 .botaoinf {
-        background-color: gray
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 3px 3px;
+    padding: 8px 15px;
     display: inline-block;
-    -webkit-text-fill-color: red;
-    margin-top: 30px;
-    margin-left: 170px;
-    margin-bottom: 70px;
-    font-weight: bold;
-}
-
-.formacaohome {
-    margin-left: 150px;
-    margin-top: -100px;
-}
-
-.formacao_1home {
-    margin-top: -20px;
-    position: relative;
-    left: 300px;
-    top: 114px;
-    margin-left: 10px;
-}
-
-.formacao_2home {
-    margin-top: 50px;
-}
-
-.infformacao {
-    font-size: 1.5em;
     color: red;
+    border: 1px solid red;
+    font-family: monospace;
+    font-size: 1rem;
+    transition: 0.2s;
 }
 
-.infformacaop {
-    font-size: 1.2em;
+.botaoinf:hover {
     color: gray;
+    border-color: gray;
+}
+
+.botoes {
+    width: min(1200px, 90%);
+    margin: 0 auto 70px;
+}
+
+.sobre_completo {
+    width: min(1200px, 90%);
+    margin: 100px auto;
 }
 
 .sobre {
-    margin-left: 150px;
+    margin: 0 0 30px;
     font-size: 0.9em;
     color: red;
-    margin-top: 100px;
 }
 
 .sobre_titulo {
-    margin-left: 150px;
+    margin: 0 0 30px;
     font-size: 2.5em;
-    margin-top: 17px;
 }
 
 .construindo {
-    color: ;
+    color: white;
+    font-family: monospace;
+    font-size: 3rem;
 }
 
 .ofuturo {
     color: red;
     font-family: "Futuro", sans-serif; 
     margin-top: -50px;
+    font-size: 3rem;
 }
 
 .sobre_texto {
-    margin-left: 150px;
-    font-size: 1.2em;
     max-width: 600px;
+    font-size: 1.2em;
+    color: gray;
+    font-family: sans-serif;
 }
 
 .p1 {
@@ -153,34 +167,48 @@ a {
     margin-bottom: -20px;
 }
 
+.sobre_e_formacao {
+    width: min(1200px, 90%);
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
 .formacao_sobre {
-    margin-left: 1000px;
-    margin-right: 150px;
-    margin-bottom: 100px;
-    margin-top: -440px;
+    margin-top: 90px;
+}
+
+.hr1 {
+    border: none;
+    border-top: 0.5px solid rgb(49, 49, 49);
 }
 
 .formacao_titulo {
-    
     font-size: 0.9em;
     color: red;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 }
+
 
 .formacao1 {
     margin-top: 5px;
 }
 
-.pinfo {
-    color: gray;
-    margin-bottom: 50px;
+.formacao_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
+.pinfo,
 .datas {
     color: gray;
-    margin-left: 700px;
-    margin-top: -70px;
-    
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.8rem;
 }
 
 .status {
@@ -193,29 +221,147 @@ a {
 }
 
 #hab {
+    width: min(1200px, 90%);
+    margin: 100px auto 30px;
     font-size: 0.9em;
-    margin-left: 150px;
-    margin-top: 100px;
     color: red;
+    list-style: none;
 }
 
 .techstack {
-    margin-left: 150px;
-    margin-top: 20px;
+    width: min(1200px, 90%);
+    margin: 20px auto;
     font-size: 2.5em;
+    
+   
 }
 
 .tech {
-    color: ;
+    font-size: 3rem;
 }
 
 .stack {
     color: red;
     margin-top: -50px;
     font-family: "Futuro", sans-serif;
+    font-size: 3rem;
+}
+
+.nome_tech {
+    color: gray;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.skills_grid {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 80px;
+}
+
+.skills_grid ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills_grid li {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    color: gray;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.fundamentos,
+.comportamentais {
+    grid-column: 1 / -1;
+}
+
+.nivel_tecnico_tabela {
+    width: min(1200px, 90%);
+    margin: 100px auto;
+}
+
+.nivel_tecnico_tabela h2 {
+    color: gray;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+.nivel_tecnico_tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nivel_tecnico_tabela th {
+    display: none;
+}
+
+.nivel_tecnico_tabela td {
+    padding: 10px 0;
+    color: gray;
+}
+
+.barra {
+    width: 100%;
+    height: 1px;
+    background-color: #292929;
+}
+
+.progresso {
+    height: 1px;
+    background-color: red;
+}
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 60%;
+}
+
+.java_nivel {
+    width: 30%;
+}
+
+.postgres {
+    width: 30%;
+}
+
+.git {
+    width: 70%;
+}
+
+.office {
+    width: 85%;
+}
+
+.nivel_tecnico_tabela td:last-child {
+    color: red;
+    font-weight: bold;
+    text-align: right;
+    padding-left: 30px;
+}
+
+.nivel_tecnico_tabela td:nth-child(2) {
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
+
+
 footer {
-    margin-top: 1500px;
+    margin-top: 100px;
+    padding: 30px 0;
+    text-align: center;
 }
