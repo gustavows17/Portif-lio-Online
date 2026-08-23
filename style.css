@@ -130,8 +130,9 @@ a {
 
 .sobre {
     margin: 0 0 30px;
-    font-size: 0.9em;
+    font-size: 1rem;
     color: red;
+    font-family: monospace;
 }
 
 .sobre_titulo {
@@ -186,9 +187,10 @@ a {
 }
 
 .formacao_titulo {
-    font-size: 0.9em;
+    font-size: 1rem;
     color: red;
     margin-bottom: 57px;
+    font-family: monospace;
 }
 
 
@@ -223,9 +225,10 @@ a {
 #hab {
     width: min(1200px, 90%);
     margin: 100px auto 30px;
-    font-size: 0.9em;
+    font-size: 1rem;
     color: red;
     list-style: none;
+    font-family: monospace;
 }
 
 .techstack {
@@ -290,9 +293,10 @@ a {
 }
 
 .nivel_tecnico_tabela h2 {
-    color: gray;
-    font-size: 0.9em;
+    color: red;
+    font-size: 1.3em;
     margin-bottom: 30px;
+    font-family: monospace;
 }
 
 .nivel_tecnico_tabela table {
@@ -307,6 +311,8 @@ a {
 .nivel_tecnico_tabela td {
     padding: 10px 0;
     color: gray;
+    font-family: monospace;
+    font-size: 1rem;
 }
 
 .barra {
@@ -357,11 +363,187 @@ a {
     padding-right: 30px;
 }
 
+#experiencia {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.exp_topico {
+    width: min(1200px);
+    margin: 100px auto 30px;
+    font-size: 0.9em;
+    color: red;
+}
+
+.hr_exp {
+border: none;
+border-top: 0.5px solid rgb(49, 49, 49);
+max-width: 100%;
+}
+
+#experiencia {
+    width: min(1200px, 90%);
+    margin: 100px auto;
+} 
+
+.exp_topico {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+.experiencia_titulo {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.experiencia {
+    margin: 0;
+}
+
+.profissional {
+    color: red;
+    font-family: "Futuro", sans-serif;
+    margin: -10px 0 0;
+}
+
+.exp_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp_empresa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.tit_exp {
+    margin: 0;
+}
+
+.setor_exp {
+    border: 1px solid #333;
+    padding: 4px 8px;
+    color: #555;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.data_exp {
+    margin: 0;
+    color: #555;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.funcao_exp {
+    margin: 8px 0 15px;
+    color: #555;
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.tasks_exp {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.tasks_exp li {
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.tasks_exp li::before {
+    content: "› ";
+    color: red;
+}
+
+#contato {
+    width: min(1200px, 90%);
+    margin: 150px auto 0;
+}
+
+.contato_topico {
+    color: red;
+    font-family: monospace;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.Contato_titulo {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.lets {
+    margin: 0;
+}
+
+.connect {
+    color: red;
+    font-family: "Futuro", sans-serif;
+    margin: -10px 0 0;
+}
 
 
+
+.contato_descricao {
+    max-width: 500px;
+    color: gray;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+
+.contato_info {
+    width: 100%;
+}
+
+.contato_linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #222;
+    color: #555;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.contato_linha > span:first-child {
+    color: #444;
+    letter-spacing: 2px;
+}
+
+.contato_linha > span:last-child,
+.contato_linha a {
+    color: #555;
+    text-decoration: none;
+}
+
+.contato_linha a:hover {
+    color: red;
+}
 
 footer {
     margin-top: 100px;
-    padding: 30px 0;
     text-align: center;
+    color: rgba(128, 128, 128, 0.537);
+    font-family: monospace;
+    font-size: 0.8rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
