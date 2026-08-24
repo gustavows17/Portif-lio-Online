@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @font-face {
     font-family: "Futuro";
@@ -8,8 +9,6 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     margin: 0 auto;
     background-color: #060606;
@@ -17,6 +16,31 @@ body {
 
 h3 {
     color: white;
+    font-family: monospace;
+}
+
+.titulos {
+    width: min(1200px, 90%);
+    margin: 20px auto;
+}
+
+.tit_cima {
+    color: white;
+    font-family: monospace;
+    font-size: 4rem;
+}
+
+.tit_baixo {
+    color: red;
+    font-family: "Futuro", sans-serif; 
+    margin-top: -70px;
+    font-size: 4rem;
+}
+
+.topicos {
+    font-size: 1rem;
+    color: red;
+    list-style: none;
     font-family: monospace;
 }
 
@@ -45,7 +69,7 @@ h3 {
 
 .Logo_cabecalho {
     font-size: 0.9em;
-    color: red;
+    color: white;
     font-family: monospace;
 }
 
@@ -56,15 +80,28 @@ a {
 .botao_menu {
     padding: 8px 15px;
     display: inline-block;
+    color: white;
+    font-family: monospace;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.botao_projetos {
+    padding: 8px 15px;
+    display: inline-block;
     color: red;
     font-family: monospace;
     font-size: 1.1rem;
     transition: 0.2s;
 }
 
+.botao_projetos:hover {
+    -webkit-text-fill-color: gray;
+}
+
 .botao_menu:hover {
-    color: gray;
-    border-color: gray;
+    color: red;
+    border-color: red;
 }
 
 .Menu_cabecalho {
@@ -86,20 +123,21 @@ a {
     font-family: "JetBrains Mono", monospace;
 }
 
-.im {
+.name {
     color: red;
-    font-size: 7rem;
+    font-size: 8rem;
     margin-bottom: 100px;
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 2000;
-    
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;  
+    font-weight: bolder; 
 }
 
 .p {
     width: min(1200px, 90%);
     margin: 0 auto 50px;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     color: white;
+    font-family: monospace
     
 }
 
@@ -111,6 +149,7 @@ a {
     font-family: monospace;
     font-size: 1rem;
     transition: 0.2s;
+    margin: 2.5px;
 }
 
 .botaoinf:hover {
@@ -123,34 +162,10 @@ a {
     margin: 0 auto 70px;
 }
 
+
 .sobre_completo {
     width: min(1200px, 90%);
     margin: 100px auto;
-}
-
-.sobre {
-    margin: 0 0 30px;
-    font-size: 1rem;
-    color: red;
-    font-family: monospace;
-}
-
-.sobre_titulo {
-    margin: 0 0 30px;
-    font-size: 2.5em;
-}
-
-.construindo {
-    color: white;
-    font-family: monospace;
-    font-size: 3rem;
-}
-
-.ofuturo {
-    color: red;
-    font-family: "Futuro", sans-serif; 
-    margin-top: -50px;
-    font-size: 3rem;
 }
 
 .sobre_texto {
@@ -159,18 +174,13 @@ a {
     color: gray;
     font-family: sans-serif;
 }
-
-.p1 {
-    margin-bottom: -20px;
-}
-
-.p2 {
+.p_sobre {
     margin-bottom: -20px;
 }
 
 .sobre_e_formacao {
     width: min(1200px, 90%);
-    margin: 100px auto;
+    margin: 150px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -179,6 +189,10 @@ a {
 
 .formacao_sobre {
     margin-top: 90px;
+}
+
+.empresa_escola {
+    font-size: 1.3rem;
 }
 
 .hr1 {
@@ -210,12 +224,13 @@ a {
     color: gray;
     margin: 0;
     font-family: sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .status {
     color: gray;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    font-family: sans-serif;
 }
 
 .abertoopr {
@@ -231,29 +246,11 @@ a {
     font-family: monospace;
 }
 
-.techstack {
-    width: min(1200px, 90%);
-    margin: 20px auto;
-    font-size: 2.5em;
-    
-   
-}
-
-.tech {
-    font-size: 3rem;
-}
-
-.stack {
-    color: red;
-    margin-top: -50px;
-    font-family: "Futuro", sans-serif;
-    font-size: 3rem;
-}
 
 .nome_tech {
     color: gray;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .skills_grid {
@@ -279,7 +276,7 @@ a {
     padding: 8px 12px;
     color: gray;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .fundamentos,
@@ -290,6 +287,7 @@ a {
 .nivel_tecnico_tabela {
     width: min(1200px, 90%);
     margin: 100px auto;
+    justify-content: space-between;
 }
 
 .nivel_tecnico_tabela h2 {
@@ -312,13 +310,14 @@ a {
     padding: 10px 0;
     color: gray;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .barra {
-    width: 100%;
+    width: 70%;
     height: 1px;
     background-color: #292929;
+
 }
 
 .progresso {
@@ -327,15 +326,15 @@ a {
 }
 
 .html {
-    width: 60%;
+    width: 70%;
 }
 
 .css {
-    width: 60%;
+    width: 50%;
 }
 
 .java_nivel {
-    width: 30%;
+    width: 20%;
 }
 
 .postgres {
@@ -343,11 +342,11 @@ a {
 }
 
 .git {
-    width: 70%;
+    width: 60%;
 }
 
 .office {
-    width: 85%;
+    width: 75%;
 }
 
 .nivel_tecnico_tabela td:last-child {
@@ -366,13 +365,6 @@ a {
 #experiencia {
     width: min(1200px, 90%);
     margin: 0 auto;
-}
-
-.exp_topico {
-    width: min(1200px);
-    margin: 100px auto 30px;
-    font-size: 0.9em;
-    color: red;
 }
 
 .hr_exp {
@@ -396,16 +388,6 @@ max-width: 100%;
 .experiencia_titulo {
     font-size: 3rem;
     margin-bottom: 50px;
-}
-
-.experiencia {
-    margin: 0;
-}
-
-.profissional {
-    color: red;
-    font-family: "Futuro", sans-serif;
-    margin: -10px 0 0;
 }
 
 .exp_cabecalho {
@@ -475,36 +457,17 @@ max-width: 100%;
     margin: 150px auto 0;
 }
 
-.contato_topico {
-    color: red;
-    font-family: monospace;
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
 .Contato_titulo {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.lets {
-    margin: 0;
-}
-
-.connect {
-    color: red;
-    font-family: "Futuro", sans-serif;
-    margin: -10px 0 0;
-}
-
-
-
 .contato_descricao {
-    max-width: 500px;
+    max-width: 600px;
     color: gray;
-    font-size: 1.1em;
-    line-height: 1.5;
+    font-size: 1rem;
     margin-bottom: 45px;
+    font-family: sans-serif;
 }
 
 .contato_info {
@@ -519,7 +482,7 @@ max-width: 100%;
     border-bottom: 1px solid #222;
     color: #555;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .contato_linha > span:first-child {
