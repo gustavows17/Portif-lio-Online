@@ -65,6 +65,7 @@ h3 {
     background-color: #060606f6;
     border-bottom: 1px solid #3333338e;
     border-radius: 0px;
+    z-index: 9999;
 }
 
 .Logo_cabecalho {
@@ -83,7 +84,15 @@ a {
     color: white;
     font-family: monospace;
     font-size: 1.1rem;
-    transition: 0.2s;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.botao_menu:hover {
+    color: red;
+    transform: translateY(-2px);
 }
 
 .botao_projetos {
@@ -92,7 +101,15 @@ a {
     color: red;
     font-family: monospace;
     font-size: 1.1rem;
-    transition: 0.2s;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.botao_projetos:hover {
+    color: gray;
+    transform: translateY(-2px);
 }
 
 .botao_projetos:hover {
@@ -128,8 +145,24 @@ a {
     font-size: 8rem;
     margin-bottom: 100px;
     font-family: "Orbitron", sans-serif;
-    font-style: normal;  
-    font-weight: bolder; 
+    font-style: normal;
+    font-weight: bolder;
+
+    animation: aparecerNome 1s ease-out;
+}
+
+@keyframes aparecerNome {
+
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
 
 .p {
@@ -349,6 +382,24 @@ a {
     width: 75%;
 }
 
+
+/* Animação das barras */
+
+.progresso {
+    height: 1px;
+
+    background-color: red;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 1.2s ease;
+}
+
+.animar.visivel .progresso {
+    transform: scaleX(1);
+}
+
 .nivel_tecnico_tabela td:last-child {
     color: red;
     font-weight: bold;
@@ -510,3 +561,125 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+
+
+
+
+
+/* página de projetos */
+
+        .img_home {
+            width: 20px;
+            height: 20px;
+            margin-right: 7px;
+        }
+
+        .botao_home {
+            font-size: 1.5rem;
+            color: red;
+        }
+
+        .botao_home:hover {
+            color: gray;
+        }
+
+        .meus_projetos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .proj_desenv {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-family: monospace;
+        }
+
+        .titulo_pj1 {
+            color: red;
+            width: min(1200px, 90%);
+            margin: 100px auto;
+            font-size: 1.7rem;
+        }
+
+        .desc_proj {
+            max-width: 80%;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 50px;
+            margin-top: -50px;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .main_pj1 {
+            margin-top: -50px;
+            margin-left: -40px;
+            display: flex
+        }
+
+        .img1_pj1 {
+            max-width: 30dvw;
+            margin-top: -6px; 
+        }
+
+        .desc_mainpj1 {
+            margin-top: 50px;
+        }
+
+        .list_main {
+            margin-top: 90px;
+            margin-left: -150px;
+        }
+
+        .analisador_pj1 {
+            display: flex;
+        }
+
+        .img2_pj1 {
+            max-width: 30dvw;
+            margin-left: 400px;
+            margin-top: -50px;
+        }
+
+        .tit_anali {
+            margin-left: 435px;
+            margin-top: -250px;
+
+        }
+
+        .list_anali {
+            margin-top: 90px;
+            margin-left: -135px;
+            
+
+        }
+
+        .desc_analipj1 {
+           margin-left: px;
+        }
+
+
+
+/* ANIMAÇÃO AO ROLAR */
+
+    .animar {
+        opacity: 0;
+        transform: translateY(40px);
+
+        transition:
+            opacity 0.8s ease,
+            transform 0.8s ease;
+    }
+
+    .animar.visivel {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .animar
+    .animar.visivel
+    @keyframes aparecerNome
