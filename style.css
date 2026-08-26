@@ -615,52 +615,24 @@ footer {
             color: white;
         }
 
-        .main_pj1 {
-            margin-top: -50px;
-            margin-left: -40px;
-            display: flex
-        }
-
-        .img1_pj1 {
-            max-width: 30dvw;
-            margin-top: -6px; 
-        }
-
-        .desc_mainpj1 {
-            margin-top: 50px;
-        }
-
-        .list_main {
-            margin-top: 90px;
-            margin-left: -150px;
-        }
-
-        .analisador_pj1 {
+        .tit_video  {
+            color: red;
+            font-size: 1.5rem;
+            margin: 100px;
             display: flex;
+            justify-content: center;
         }
 
-        .img2_pj1 {
-            max-width: 30dvw;
-            margin-left: 400px;
-            margin-top: -50px;
+        .video {
+            max-width: 70%;
+            position: relative;
+            left: 15%;
         }
 
-        .tit_anali {
-            margin-left: 435px;
-            margin-top: -250px;
 
-        }
 
-        .list_anali {
-            margin-top: 90px;
-            margin-left: -135px;
-            
 
-        }
 
-        .desc_analipj1 {
-           margin-left: px;
-        }
 
 
 
