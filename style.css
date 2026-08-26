@@ -317,6 +317,10 @@ a {
     grid-column: 1 / -1;
 }
 
+.comportamentais {
+    margin-bottom: 150px;
+}
+
 .nivel_tecnico_tabela {
     width: min(1200px, 90%);
     margin: 100px auto;
@@ -383,7 +387,7 @@ a {
 }
 
 
-/* Animação das barras */
+/* Animação das barras de skills */
 
 .progresso {
     height: 1px;
