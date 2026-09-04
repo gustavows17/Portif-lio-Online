@@ -1,0 +1,113 @@
+
+.pagina-projetos {
+    width:var(--largura-conteudo);
+    margin:160px auto 100px;
+}
+
+.projetos-intro {
+    margin-bottom:100px;
+}
+
+.projetos-intro h1 {
+    margin:20px 0;
+    color:var(--cor-texto);
+    font-family:"Orbitron",sans-serif;
+    font-size:clamp(3rem,8vw,7rem);
+    line-height:0.9;
+}
+
+.projetos-intro h1 span {
+    color:var(--cor-principal);
+}
+
+.projetos-intro p {
+    max-width:800px;
+    color:gray;
+    font-family:monospace;
+    font-size:1.1rem;
+    line-height:1.6;
+}
+
+.card-projeto {
+    margin-bottom:80px;
+    padding:60px 0;
+    border-top:1px solid var(--cor-borda);
+    border-bottom:1px solid var(--cor-borda);
+}
+
+.numero-projeto {
+    margin-bottom:30px;
+    color:var(--cor-principal);
+    font-family:monospace;
+    font-size:1.2rem;
+}
+
+.conteudo-projeto {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:80px;
+}
+
+.categoria {
+    color:gray;
+    font-family:monospace;
+    font-size:0.9rem;
+}
+
+.projeto-info h2 {
+    color:var(--cor-texto);
+    font-family:"Orbitron",sans-serif;
+    font-size:clamp(2rem,5vw,4.5rem);
+    line-height:0.95;
+}
+
+.projeto-info h2 span {
+    color:var(--cor-principal);
+}
+
+.projeto-info p {
+    max-width:500px;
+    color:gray;
+    font-family:sans-serif;
+    line-height:1.7;
+}
+
+.tecnologias {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:30px 0;
+}
+
+.tecnologias span {
+    padding:8px 12px;
+    border:1px solid var(--cor-borda);
+    color:gray;
+    font-family:monospace;
+    font-size:0.8rem;
+}
+
+.preview-projeto img {
+    width:100%;
+    border:1px solid var(--cor-borda);
+    transition:transform 0.3s ease;
+}
+
+.preview-projeto img:hover {
+    transform:scale(1.03);
+}
+
+.botao-ver-projeto {
+    display:inline-block;
+    padding:12px 20px;
+    border:1px solid var(--cor-principal);
+    color:var(--cor-principal);
+    font-family:monospace;
+    transition:0.3s;
+}
+
+.botao-ver-projeto:hover {
+    background-color:var(--cor-principal);
+    color:black;
+}

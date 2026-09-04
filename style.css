@@ -1,385 +1,437 @@
 @charset "UTF-8";
 
+/* =====================================================
+   1. FONTES E CONFIGURAÇÕES
+===================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @font-face {
-    font-family: "Futuro";
-    src: url("./fonts/Futuro.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+    font-family:"Futuro";
+    src:url("./fonts/Futuro.otf") format("opentype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+:root {
+    --cor-fundo:#060606;
+    --cor-principal:red;
+    --cor-texto:white;
+    --cor-texto-secundario:gray;
+    --cor-borda:#333;
+    --largura-conteudo:min(1200px,90%);
+}
+
+
+/* =====================================================
+   2. ESTILOS GERAIS
+===================================================== */
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
 }
 
 body {
-    margin: 0 auto;
-    background-color: #060606;
-}
-
-h3 {
-    color: white;
-    font-family: monospace;
-}
-
-.titulos {
-    width: min(1200px, 90%);
-    margin: 20px auto;
-}
-
-.tit_cima {
-    color: white;
-    font-family: monospace;
-    font-size: 4rem;
-}
-
-.tit_baixo {
-    color: red;
-    font-family: "Futuro", sans-serif; 
-    margin-top: -70px;
-    font-size: 4rem;
-}
-
-.topicos {
-    font-size: 1rem;
-    color: red;
-    list-style: none;
-    font-family: monospace;
-}
-
-.hr {
-    border: none;
-    border-top: 0.5px solid rgb(49, 49, 49);
-    max-width: 80%;
-    
-}
-
-
-#Cabecalho {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 88px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: #060606f6;
-    border-bottom: 1px solid #3333338e;
-    border-radius: 0px;
-    z-index: 9999;
-}
-
-.Logo_cabecalho {
-    font-size: 0.9em;
-    color: white;
-    font-family: monospace;
+    margin:0;
+    background-color:var(--cor-fundo);
 }
 
 a {
-    text-decoration: none;
+    text-decoration:none;
 }
 
-.botao_menu {
-    padding: 8px 15px;
-    display: inline-block;
-    color: white;
-    font-family: monospace;
-    font-size: 1.1rem;
-
-    transition:
-        color 0.2s ease,
-        transform 0.2s ease;
+h3 {
+    color:var(--cor-texto);
+    font-family:monospace;
 }
 
-.botao_menu:hover {
-    color: red;
-    transform: translateY(-2px);
+
+/* =====================================================
+   3. ELEMENTOS REUTILIZÁVEIS
+===================================================== */
+
+.topicos {
+    color:var(--cor-principal);
+    list-style:none;
+    font-family:monospace;
+    font-size:1rem;
 }
 
-.botao_projetos {
-    padding: 8px 15px;
-    display: inline-block;
-    color: red;
-    font-family: monospace;
-    font-size: 1.1rem;
-
-    transition:
-        color 0.2s ease,
-        transform 0.2s ease;
+.hr {
+    max-width:80%;
+    border:none;
+    border-top:0.5px solid rgb(49,49,49);
 }
 
-.botao_projetos:hover {
-    color: gray;
-    transform: translateY(-2px);
+.hr1,
+.hr_exp {
+    border:none;
+    border-top:0.5px solid rgb(49,49,49);
 }
 
-.botao_projetos:hover {
-    -webkit-text-fill-color: gray;
+
+/* =====================================================
+   4. CABEÇALHO
+===================================================== */
+
+#Cabecalho {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+    width:100%;
+    height:88px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    background-color:#060606f6;
+    border-bottom:1px solid #3333338e;
 }
 
-.botao_menu:hover {
-    color: red;
-    border-color: red;
+.Logo_cabecalho {
+    color:var(--cor-texto);
+    font-family:monospace;
+    font-size:0.9em;
 }
 
 .Menu_cabecalho {
-    display: flex;
-    gap: 15px;
-    margin-right: 30px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-right:30px;
 }
 
+
+/* =====================================================
+   5. BOTÕES DO CABEÇALHO
+===================================================== */
+
+.botao_menu,
+.botao_projetos {
+    display:inline-flex;
+    align-items:center;
+    padding:8px 15px;
+    font-family:monospace;
+    font-size:1.1rem;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.botao_menu {
+    color:var(--cor-texto);
+}
+
+.botao_projetos {
+    color:var(--cor-principal);
+}
+
+.botao_menu:hover {
+    color:var(--cor-principal);
+    transform:translateY(-2px);
+}
+
+.botao_projetos:hover {
+    color:gray;
+    -webkit-text-fill-color:gray;
+    transform:translateY(-2px);
+}
+
+.img_home {
+    width:18px;
+    height:18px;
+    display:inline-block;
+    margin-right:7px;
+    object-fit:contain;
+    vertical-align:middle;
+}
+
+
+/* =====================================================
+   6. APRESENTAÇÃO INICIAL
+===================================================== */
+
 .apresentacao {
-    width: min(1200px, 90%);
-    margin: 200px auto 0;
-    font-size: 3.5em;
+    width:var(--largura-conteudo);
+    margin:200px auto 0;
+    font-size:3.5em;
 }
 
 .welcome {
-    margin: 0 0 100px;
-    font-size: 30px;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
+    margin:0 0 100px;
+    color:var(--cor-texto);
+    font-family:"JetBrains Mono",monospace;
+    font-size:30px;
 }
 
 .name {
-    color: red;
-    font-size: 8rem;
-    margin-bottom: 100px;
-    font-family: "Orbitron", sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-
-    animation: aparecerNome 1s ease-out;
-}
-
-@keyframes aparecerNome {
-
-    from {
-        opacity: 0;
-        transform: translateX(-60px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
+    margin-bottom:100px;
+    color:var(--cor-principal);
+    font-family:"Orbitron",sans-serif;
+    font-size:8rem;
+    font-style:normal;
+    font-weight:bolder;
+    animation:aparecerNome 1s ease-out;
 }
 
 .p {
-    width: min(1200px, 90%);
-    margin: 0 auto 50px;
-    font-size: 1.1rem;
-    color: white;
-    font-family: monospace
-    
-}
-
-.botaoinf {
-    padding: 8px 15px;
-    display: inline-block;
-    color: red;
-    border: 1px solid red;
-    font-family: monospace;
-    font-size: 1rem;
-    transition: 0.2s;
-    margin: 2.5px;
-}
-
-.botaoinf:hover {
-    color: gray;
-    border-color: gray;
+    width:var(--largura-conteudo);
+    margin:0 auto 50px;
+    color:var(--cor-texto);
+    font-family:monospace;
+    font-size:1.1rem;
 }
 
 .botoes {
-    width: min(1200px, 90%);
-    margin: 0 auto 70px;
+    width:var(--largura-conteudo);
+    margin:0 auto 70px;
+}
+
+.botaoinf {
+    display:inline-block;
+    margin:2.5px;
+    padding:8px 15px;
+    border:1px solid var(--cor-principal);
+    color:var(--cor-principal);
+    font-family:monospace;
+    font-size:1rem;
+    transition:0.2s;
+}
+
+.botaoinf:hover {
+    color:gray;
+    border-color:gray;
 }
 
 
+/* =====================================================
+   7. SOBRE E FORMAÇÃO
+===================================================== */
+
+.sobre_e_formacao {
+    width:var(--largura-conteudo);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:start;
+    gap:80px;
+    margin:150px auto;
+}
+
 .sobre_completo {
-    width: min(1200px, 90%);
-    margin: 100px auto;
+    width:100%;
+    margin:100px auto;
 }
 
 .sobre_texto {
-    max-width: 600px;
-    font-size: 1.2em;
-    color: gray;
-    font-family: sans-serif;
-}
-.p_sobre {
-    margin-bottom: -20px;
+    max-width:600px;
+    color:gray;
+    font-family:sans-serif;
+    font-size:1.2em;
 }
 
-.sobre_e_formacao {
-    width: min(1200px, 90%);
-    margin: 150px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
+.p_sobre {
+    margin-bottom:-20px;
 }
 
 .formacao_sobre {
-    margin-top: 90px;
+    margin-top:90px;
 }
 
 .empresa_escola {
-    font-size: 1.3rem;
-}
-
-.hr1 {
-    border: none;
-    border-top: 0.5px solid rgb(49, 49, 49);
+    font-size:1.3rem;
 }
 
 .formacao_titulo {
-    font-size: 1rem;
-    color: red;
-    margin-bottom: 57px;
-    font-family: monospace;
+    margin-bottom:57px;
+    color:var(--cor-principal);
+    font-family:monospace;
+    font-size:1rem;
 }
 
-
 .formacao1 {
-    margin-top: 5px;
+    margin-top:5px;
 }
 
 .formacao_info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
 
 .pinfo,
 .datas {
-    color: gray;
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 1rem;
+    margin:0;
+    color:gray;
+    font-family:sans-serif;
+    font-size:1rem;
 }
 
 .status {
-    color: gray;
-    font-size: 1.1rem;
-    font-family: sans-serif;
+    color:gray;
+    font-family:sans-serif;
+    font-size:1.1rem;
 }
 
 .abertoopr {
-    color: red;
+    color:var(--cor-principal);
 }
+
+
+/* =====================================================
+   8. HABILIDADES
+===================================================== */
 
 #hab {
-    width: min(1200px, 90%);
-    margin: 100px auto 30px;
-    font-size: 1rem;
-    color: red;
-    list-style: none;
-    font-family: monospace;
+    width:var(--largura-conteudo);
+    margin:100px auto 30px;
+    color:var(--cor-principal);
+    list-style:none;
+    font-family:monospace;
+    font-size:1rem;
 }
 
+.titulos {
+    width:var(--largura-conteudo);
+    margin:20px auto;
+}
+
+.tit_cima {
+    color:var(--cor-texto);
+    font-family:monospace;
+    font-size:4rem;
+}
+
+.tit_baixo {
+    margin-top:-70px;
+    color:var(--cor-principal);
+    font-family:"Futuro",sans-serif;
+    font-size:4rem;
+}
 
 .nome_tech {
-    color: gray;
-    font-family: monospace;
-    font-size: 1.2rem;
+    color:gray;
+    font-family:monospace;
+    font-size:1.2rem;
 }
 
 .skills_grid {
-    width: min(1200px, 90%);
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 80px;
+    width:var(--largura-conteudo);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px 80px;
+    margin:0 auto;
 }
 
 .skills_grid ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:0;
+    padding:0;
+    list-style:none;
 }
 
 .skills_grid li {
-    border: 1px solid #333;
-    padding: 8px 12px;
-    color: gray;
-    font-family: monospace;
-    font-size: 1rem;
+    padding:8px 12px;
+    border:1px solid var(--cor-borda);
+    color:gray;
+    font-family:monospace;
+    font-size:1rem;
 }
 
 .fundamentos,
 .comportamentais {
-    grid-column: 1 / -1;
+    grid-column:1 / -1;
 }
 
 .comportamentais {
     margin-bottom: 150px;
 }
 
+
+/* =====================================================
+   9. NÍVEL TÉCNICO
+===================================================== */
+
 .nivel_tecnico_tabela {
-    width: min(1200px, 90%);
-    margin: 100px auto;
-    justify-content: space-between;
+    width:var(--largura-conteudo);
+    margin:100px auto;
 }
 
 .nivel_tecnico_tabela h2 {
-    color: red;
-    font-size: 1.3em;
-    margin-bottom: 30px;
-    font-family: monospace;
+    margin-bottom:30px;
+    color:var(--cor-principal);
+    font-family:monospace;
+    font-size:1.3em;
 }
 
 .nivel_tecnico_tabela table {
-    width: 100%;
-    border-collapse: collapse;
+    width:100%;
+    border-collapse:collapse;
 }
 
 .nivel_tecnico_tabela th {
-    display: none;
+    display:none;
 }
 
 .nivel_tecnico_tabela td {
-    padding: 10px 0;
-    color: gray;
-    font-family: monospace;
-    font-size: 1.1rem;
+    padding:10px 0;
+    color:gray;
+    font-family:monospace;
+    font-size:1.1rem;
+}
+
+.nivel_tecnico_tabela td:last-child {
+    padding-left:30px;
+    color:var(--cor-principal);
+    font-weight:bold;
+    text-align:right;
+}
+
+.nivel_tecnico_tabela td:nth-child(2) {
+    width:60%;
+    padding-right:30px;
+    padding-left:30px;
 }
 
 .barra {
-    width: 70%;
-    height: 1px;
-    background-color: #292929;
-
+    width:70%;
+    height:1px;
+    background-color:#292929;
 }
 
 .progresso {
-    height: 1px;
-    background-color: red;
+    height:1px;
+    background-color:var(--cor-principal);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform 1.2s ease;
 }
 
 .html {
-    width: 70%;
+    width:70%;
 }
 
 .css {
-    width: 50%;
+    width:50%;
 }
 
 .java_nivel {
-    width: 20%;
+    width:20%;
 }
 
 .postgres {
-    width: 30%;
+    width:30%;
 }
 
 .git {
-    width: 60%;
+    width:60%;
 }
 
 .office {
@@ -387,7 +439,7 @@ a {
 }
 
 
-/* Animação das barras de skills */
+/* Animação das barras */
 
 .progresso {
     height: 1px;
@@ -401,169 +453,159 @@ a {
 }
 
 .animar.visivel .progresso {
-    transform: scaleX(1);
+    transform:scaleX(1);
 }
 
-.nivel_tecnico_tabela td:last-child {
-    color: red;
-    font-weight: bold;
-    text-align: right;
-    padding-left: 30px;
-}
 
-.nivel_tecnico_tabela td:nth-child(2) {
-    width: 60%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+/* =====================================================
+   10. EXPERIÊNCIA
+===================================================== */
 
 #experiencia {
-    width: min(1200px, 90%);
-    margin: 0 auto;
+    width:var(--largura-conteudo);
+    margin:100px auto;
 }
-
-.hr_exp {
-border: none;
-border-top: 0.5px solid rgb(49, 49, 49);
-max-width: 100%;
-}
-
-#experiencia {
-    width: min(1200px, 90%);
-    margin: 100px auto;
-} 
 
 .exp_topico {
-    color: red;
-    font-size: 1rem;
-    margin-bottom: 30px;
-    font-family: monospace;
+    margin-bottom:30px;
+    color:var(--cor-principal);
+    font-family:monospace;
+    font-size:1rem;
 }
 
 .experiencia_titulo {
-    font-size: 3rem;
-    margin-bottom: 50px;
+    margin-bottom:50px;
+    font-size:3rem;
 }
 
 .exp_cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .exp_empresa {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: white;
-    font-family: monospace;
-    font-size: 1.5rem;
-    margin-top: 20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+    color:var(--cor-texto);
+    font-family:monospace;
+    font-size:1.5rem;
 }
 
 .tit_exp {
-    margin: 0;
+    margin:0;
 }
 
 .setor_exp {
-    border: 1px solid #333;
-    padding: 4px 8px;
-    color: #555;
-    font-family: monospace;
-    font-size: 0.8rem;
+    padding:4px 8px;
+    border:1px solid var(--cor-borda);
+    color:#555;
+    font-family:monospace;
+    font-size:0.8rem;
 }
 
 .data_exp {
-    margin: 0;
-    color: #555;
-    font-family: monospace;
-    font-size: 0.9rem;
+    margin:0;
+    color:#555;
+    font-family:monospace;
+    font-size:0.9rem;
 }
 
 .funcao_exp {
-    margin: 8px 0 15px;
-    color: #555;
-    font-family: monospace;
-    font-weight: normal;
-    font-size: 1rem;
+    margin:8px 0 15px;
+    color:#555;
+    font-family:monospace;
+    font-size:1rem;
+    font-weight:normal;
 }
 
 .tasks_exp {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
+    margin:0 0 20px;
+    padding:0;
+    list-style:none;
 }
 
 .tasks_exp li {
-    color: #555;
-    margin-bottom: 8px;
-    font-size: 1rem;
-    font-family: sans-serif;
+    margin-bottom:8px;
+    color:#555;
+    font-family:sans-serif;
+    font-size:1rem;
 }
 
 .tasks_exp li::before {
-    content: "› ";
-    color: red;
+    content:"› ";
+    color:var(--cor-principal);
 }
 
+
+/* =====================================================
+   11. CONTATO
+===================================================== */
+
 #contato {
-    width: min(1200px, 90%);
-    margin: 150px auto 0;
+    width:var(--largura-conteudo);
+    margin:150px auto 0;
 }
 
 .Contato_titulo {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom:20px;
+    font-size:3rem;
 }
 
 .contato_descricao {
-    max-width: 600px;
-    color: gray;
-    font-size: 1rem;
-    margin-bottom: 45px;
-    font-family: sans-serif;
+    max-width:600px;
+    margin-bottom:45px;
+    color:gray;
+    font-family:sans-serif;
+    font-size:1rem;
 }
 
 .contato_info {
-    width: 100%;
+    width:100%;
 }
 
 .contato_linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 0;
-    border-bottom: 1px solid #222;
-    color: #555;
-    font-family: monospace;
-    font-size: 1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:17px 0;
+    border-bottom:1px solid #222;
+    color:#555;
+    font-family:monospace;
+    font-size:1rem;
 }
 
 .contato_linha > span:first-child {
-    color: #444;
-    letter-spacing: 2px;
+    color:#444;
+    letter-spacing:2px;
 }
 
 .contato_linha > span:last-child,
 .contato_linha a {
-    color: #555;
-    text-decoration: none;
+    color:#555;
+    text-decoration:none;
 }
 
 .contato_linha a:hover {
-    color: red;
+    color:var(--cor-principal);
 }
 
+
+/* =====================================================
+   12. RODAPÉ
+===================================================== */
+
 footer {
-    margin-top: 100px;
-    text-align: center;
-    color: rgba(128, 128, 128, 0.537);
-    font-family: monospace;
-    font-size: 0.8rem;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
+    margin-top:100px;
+    padding:10px;
+    color:rgba(128,128,128,0.537);
+    font-family:monospace;
+    font-size:0.8rem;
+    text-align:center;
 }
 
 
@@ -619,43 +661,74 @@ footer {
             color: white;
         }
 
-        .tit_video  {
-            color: red;
-            font-size: 1.5rem;
-            margin: 100px;
+        .main_pj1 {
+            margin-top: -50px;
+            margin-left: -40px;
+            display: flex
+        }
+
+        .img1_pj1 {
+            max-width: 30dvw;
+            margin-top: -6px; 
+        }
+
+        .desc_mainpj1 {
+            margin-top: 50px;
+        }
+
+        .list_main {
+            margin-top: 90px;
+            margin-left: -150px;
+        }
+
+        .analisador_pj1 {
             display: flex;
-            justify-content: center;
         }
 
-        .video {
-            max-width: 70%;
-            position: relative;
-            left: 15%;
+        .img2_pj1 {
+            max-width: 30dvw;
+            margin-left: 400px;
+            margin-top: -50px;
         }
 
+        .tit_anali {
+            margin-left: 435px;
+            margin-top: -250px;
 
+        }
 
+        .list_anali {
+            margin-top: 90px;
+            margin-left: -135px;
+            
 
+        }
 
+        .desc_analipj1 {
+           margin-left: px;
+        }
 
 
 
 /* ANIMAÇÃO AO ROLAR */
 
-    .animar {
-        opacity: 0;
-        transform: translateY(40px);
-
-        transition:
-            opacity 0.8s ease,
-            transform 0.8s ease;
+    .botoes{
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        margin-bottom:50px;
     }
 
-    .animar.visivel {
-        opacity: 1;
-        transform: translateY(0);
+    .botaoinf{
+        margin:0;
+        padding:8px 10px;
+        font-size:0.8rem;
     }
 
-    .animar
-    .animar.visivel
-    @keyframes aparecerNome
+
+    /* LINHA */
+
+    .hr{
+        max-width:90%;
+    }
+}

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Projetos</title>
+=======
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Projetos | Gustavo Westphal Skorek</title>
+>>>>>>> 2c806f8 (Refatorada página de projetos, adicionada página do detector de golpes, responsividade para mobile no cabeçalho e refatoração em styles.css)
 </head>
 <body>
     <header id="Cabecalho">
@@ -18,14 +24,32 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <div class="meus_projetos">
-                <h1 class="name">Meus Projetos</h1>
-            </div>
-            <h2 class="proj_desenv">AQUI ESTÃO ALGUNS PROJETOS QUE DESENVOLVI:</h2>
-        </section>
+    <main class="pagina-projetos">
 
+    <section class="projetos-intro">
+        <p class="topicos">>> PROJETOS</p>
+
+        <h1>
+            MEUS<br>
+            <span>PROJETOS</span>
+        </h1>
+
+        <p>
+            Projetos desenvolvidos durante minha jornada na tecnologia,
+            explorando programação, lógica e resolução de problemas.
+        </p>
+    </section>
+
+
+    <section class="lista-projetos">
+
+        <article class="card-projeto">
+
+            <div class="numero-projeto">
+                01
+            </div>
+
+<<<<<<< HEAD
         <section class="projeto_1">
             <h3 class="titulo_pj1">DETECTOR DE GOLPES:</h3>
             <div class="desc_proj">
@@ -100,7 +124,54 @@
         </section>
 
     </main>
+=======
+            <div class="conteudo-projeto">
 
+                <div class="projeto-info">
+
+                    <span class="categoria">
+                        JAVA / DESKTOP
+                    </span>
+
+                    <h2>
+                        DETECTOR DE<br>
+                        <span>GOLPES</span>
+                    </h2>
+
+                    <p>
+                        Sistema desenvolvido em Java para analisar
+                        mensagens e identificar possíveis indicadores
+                        de golpes digitais.
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>JAVA</span>
+                        <span>POO</span>
+                        <span>REGEX</span>
+                        <span>JAVA NIO</span>
+                    </div>
+
+                    <a href="detector-de-golpes.html" class="botao-ver-projeto">VER PROJETO →</a>
+                    <a class="botao-ver-projeto" href="https://github.com/gustavows17/Trabalho-Detector-De-Golpes" target="_blank" rel="external">VER CÓDIGO →</a>
+
+                </div>
+
+                <div class="preview-projeto">
+
+                    <img
+                        src="img/img-detector-de-golpes.png"
+                        alt="Detector de Golpes"
+                    >
+
+                </div>
+
+            </div>
+>>>>>>> 2c806f8 (Refatorada página de projetos, adicionada página do detector de golpes, responsividade para mobile no cabeçalho e refatoração em styles.css)
+
+        </article>
+    </section>
+
+</main>
     
     
 </body>
