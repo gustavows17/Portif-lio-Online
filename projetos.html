@@ -1,178 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
+    <meta name="description" content="Projetos desenvolvidos por Gustavo Westphal Skorek">
+    <meta name="author" content="Gustavo Westphal Skorek">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Projetos</title>
-=======
     <link rel="stylesheet" href="projetos.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Projetos | Gustavo Westphal Skorek</title>
->>>>>>> 2c806f8 (Refatorada página de projetos, adicionada página do detector de golpes, responsividade para mobile no cabeçalho e refatoração em styles.css)
 </head>
 <body>
-    <header id="Cabecalho">
-        <div class="Logo_cabecalho">
-            <h1>GUSTAVO WESTPHAL SKOREK</h1>
-        </div>
-        <div class="Menu_cabecalho">
-               <a class="botao_menu" href="index.html"><img class="img_home" src="img-icone/home.png" alt="Voltar para home" ><span class="botao_home">HOME</span></a>
 
-        </div>
-    </header>
+<header id="Cabecalho">
+    <div class="Logo_cabecalho">
+        <h1>GW</h1>
+    </div>
+    <nav class="Menu_cabecalho">
+        <a class="botao_menu" href="index.html">
+            <img class="img_home" src="img-icone/home.png" alt="Voltar para a página inicial">
+            <span>HOME</span>
+        </a>
+    </nav>
+</header>
 
-    <main class="pagina-projetos">
+<main class="pagina-projetos">
 
     <section class="projetos-intro">
         <p class="topicos">>> PROJETOS</p>
-
-        <h1>
-            MEUS<br>
-            <span>PROJETOS</span>
-        </h1>
-
+        <h1>MEUS<br><span>PROJETOS</span></h1>
         <p>
             Projetos desenvolvidos durante minha jornada na tecnologia,
             explorando programação, lógica e resolução de problemas.
         </p>
     </section>
 
-
     <section class="lista-projetos">
 
-        <article class="card-projeto">
-
-            <div class="numero-projeto">
-                01
-            </div>
-
-<<<<<<< HEAD
-        <section class="projeto_1">
-            <h3 class="titulo_pj1">DETECTOR DE GOLPES:</h3>
-            <div class="desc_proj">
-                <p>O Detector de Golpes é um projeto desenvolvido em Java com o objetivo de identificar possíveis mensagens fraudulentas por meio da análise de diferentes padrões de texto.</p>
-                
-                <p>O sistema permite selecionar um arquivo .txt e analisar automaticamente seu conteúdo. Durante a análise, são identificados diversos indícios comuns em golpes digitais, como pedidos de dados pessoais, cobranças suspeitas, mensagens de urgência, links, premiações falsas, ameaças de bloqueio e solicitações relacionadas a pagamentos.</p>
-                
-                
-                <p>Cada indicador possui uma pontuação de risco específica. Ao final da análise, o sistema calcula uma pontuação total e classifica a mensagem em diferentes níveis de risco, além de apresentar os motivos encontrados.</p>
-                
-                <p>Principais funcionalidades:</p>
-                <ul>
-                    <li>Seleção de arquivos .txt para análise.</li>
-                    <li>Normalização do texto, incluindo remoção de acentos e conversão para letras minúsculas</li>
-                    <li>Identificação de palavras e expressões suspeitas.</li>
-                    <li>Sistema de pontuação baseado no nível de risco de cada indicador.</li>
-                    <li>Detecção de links e URLs.</li>
-                    <li>Identificação de uso excessivo de letras maiúsculas.</li>
-                    <li>Identificação de excesso de exclamações.</li>
-                    <li>Classificação da mensagem em níveis de risco.</li>
-                    <li>Geração de um relatório com os motivos encontrados.</li>
-                </ul>
-                <p>Tecnologias utilizadas:</p>
-                <ul>
-                    <li>Java</li>
-                    <li>Java Swing — seleção de arquivos.</li>
-                    <li>Java NIO — leitura dos arquivos.</li>
-                    <li>Collections Framework — armazenamento das palavras suspeitas.</li>
-                    <li>String/Regex — processamento e normalização de textos.</li>
-                    <li>Programação Orientada a Objetos (POO).</li>
-                </ul>
-                <p>Estrutura do projeto:</p>
-                
-                <p>O projeto foi dividido em classes com responsabilidades diferentes:</p>
-                
-                <p class="tit_main">Main</p>
-           
-                <p class="desc_mainpj1">Responsável pela:</p>
-                <ul class="list_main">
-                    <li>interação inicial com o usuário;</li>
-                    <li>seleção do arquivo;</li>
-                    <li>apresentação do resultado.</li>
-                </ul>
-
-                <p class="tit_anali">AnalisadorGolpes</p>
-                <p class="desc_analipj1">Responsável por:</p>
-                <ul class="list_anali">
-                    <li>Realizar a análise das mensagens;</li>
-                    <li>Identificar padrões suspeitos;</li>
-                    <li>Calcular a pontuação de risco;</li>
-                    <li>Classificar o nível de ameaça com <br/> base nos indicadores encontrados.</li>
-                </ul>
-                
-                <p class="tit_palavras">PalavrasSuspeitas</p>
-                <p>Responsável por:</p>
-                <ul>
-                    <li>Armazenar e organizar as palavras e expressões suspeitas;</li>
-                    <li>Atribuir diferentes pesos de risco para cada indicador utilizado pelo sistema.</li>
-                </ul>
-                
-                <p>Resultado</p>
-                <p>Responsável por:</p>
-                <ul>
-                    <li>Armazenar e organizar os resultados da análise;</li>
-                    <li>Incluir a pontuação de risco, o nível de ameaça e os motivos identificados pelo sistema.</li>
-                </ul>
-                
-                <p>Objetivo do projeto</p>
-                <p>Além de explorar conceitos de Java e Programação Orientada a Objetos, o projeto foi desenvolvido para estudar como sistemas baseados em regras podem ser utilizados para identificar padrões suspeitos em mensagens digitais.</p>
-                <h3 class="tit_video">Vídeo demonstrativo:</h3>
-                <video class="video" src="videos/vídeo-projeto1.mp4" type="video/mp4" controls>                
-        </section>
-
-    </main>
-=======
-            <div class="conteudo-projeto">
-
-                <div class="projeto-info">
-
-                    <span class="categoria">
-                        JAVA / DESKTOP
-                    </span>
-
-                    <h2>
-                        DETECTOR DE<br>
-                        <span>GOLPES</span>
-                    </h2>
-
-                    <p>
-                        Sistema desenvolvido em Java para analisar
-                        mensagens e identificar possíveis indicadores
-                        de golpes digitais.
-                    </p>
-
-                    <div class="tecnologias">
-                        <span>JAVA</span>
-                        <span>POO</span>
-                        <span>REGEX</span>
-                        <span>JAVA NIO</span>
-                    </div>
-
-                    <a href="detector-de-golpes.html" class="botao-ver-projeto">VER PROJETO →</a>
-                    <a class="botao-ver-projeto" href="https://github.com/gustavows17/Trabalho-Detector-De-Golpes" target="_blank" rel="external">VER CÓDIGO →</a>
-
+        <article class="projeto">
+            <div class="projeto-info">
+                <span class="numero-projeto">01</span>
+                <p class="categoria">JAVA • POO • JAVA SWING</p>
+                <h2>DETECTOR DE <span>GOLPES</span></h2>
+                <p class="descricao">
+                    Sistema desenvolvido em Java para identificar possíveis
+                    mensagens fraudulentas através da análise de padrões de texto,
+                    utilizando um sistema de pontuação e classificação de risco.
+                </p>
+                <div class="tecnologias">
+                    <span>JAVA</span>
+                    <span>JAVA SWING</span>
+                    <span>JAVA NIO</span>
+                    <span>POO</span>
                 </div>
-
-                <div class="preview-projeto">
-
-                    <img
-                        src="img/img-detector-de-golpes.png"
-                        alt="Detector de Golpes"
-                    >
-
+                <div class="botoes-projeto">
+                    <a class="botao-codigo" href="https://github.com/gustavows17/Trabalho-Detector-De-Golpes" target="_blank" rel="noopener noreferrer">
+                        ↗ VER CÓDIGO
+                    </a>
+                    <a class="botao-detalhes" href="detector-de-golpes.html">
+                        + VER DETALHES
+                    </a>
                 </div>
-
             </div>
->>>>>>> 2c806f8 (Refatorada página de projetos, adicionada página do detector de golpes, responsividade para mobile no cabeçalho e refatoração em styles.css)
-
+            <div class="projeto-imagem">
+                <img src="img/img-detector-de-golpes.png" alt="Preview do projeto Detector de Golpes">
+            </div>
         </article>
+
     </section>
 
 </main>
-    
-    
+
+<footer>
+    <p>&copy; 2026 Gustavo Westphal Skorek. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>

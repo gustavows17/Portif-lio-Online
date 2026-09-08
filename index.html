@@ -1,136 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meu Portfólio">
+    <meta name="description" content="Portfólio de Gustavo Westphal Skorek">
     <meta name="author" content="Gustavo Westphal Skorek">
-
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Portfólio - Gustavo Westphal Skorek</title>
 </head>
 <body>
+
+    <!===== CABEÇALHO ======>
 
     <header id="Cabecalho">
         <div class="Logo_cabecalho">
             <h1>GW</h1>
         </div>
-        <div class="Menu_cabecalho">
-               <a class="botao_menu" href="#sobre_e_formacao">ABOUT</a>
-               <a class="botao_menu" href="#hab">SKILLS</a>
-               <a class="botao_menu" href="#experiencia">EXPERIENCE</a>
-               <a class="botao_menu" href="#contato">CONTACT</a>
-               <a class="botao_projetos" href="projetos.html">PROJECTS</a>
-        </div>
+
+        <nav class="Menu_cabecalho">
+            <a class="botao_menu" href="#sobre_e_formacao">ABOUT</a>
+            <a class="botao_menu" href="#hab">SKILLS</a>
+            <a class="botao_menu" href="#experiencia">EXPERIENCE</a>
+            <a class="botao_menu" href="#contato">CONTACT</a>
+            <a class="botao_projetos" href="projetos.html">PROJECTS</a>
+        </nav>
     </header>
 
     <main>
+
+        <!===== APRESENTAÇÃO ======>
+
         <section id="Apresentacao_completa">
             <div class="apresentacao">
                 <h2 class="welcome">OLÁ, EU SOU</h2>
-                <h2 class="name"><b><span style="background-color: red; color: black;">GUSTAVO</span> WESTPHAL</b></h2>
+                <h1 class="name"><span>GUSTAVO</span> WESTPHAL</h1>
+            </div>
+            <div class="introducao">
+                <p class="p">Estudante de Tecnologia | 18 anos - Canoas/RS</p>
+
+                <div class="botoes">
+                    <a class="botaoinf" href="#experiencia">VER_EXPERIÊNCIA</a>
+                    <a class="botaoinf" href="#contato">CONTATO</a>
+                    <a class="botaoinf" href="projetos.html">VER_PROJETOS</a>
+                </div>
             </div>
         </section>
 
-        <article >
-            <p class="p"> Estudante de Tecnologia | 18 anos - Canoas/RS</p> 
-            <div class="botoes">
-                <a class="botaoinf"  href="#experiencia">VER_EXPERIÊNCIA</a>
-                <a class="botaoinf" href="#contato">CONTATO</a>
-                <a class="botaoinf" href="projetos.html">VER_PROJETOS</a>
-            </div>
-        </article>
         <hr class="hr">
 
-        <div id="sobre_e_formacao" class="sobre_e_formacao animar">
-            <section class="sobre_completo">
-                <h2 class="topicos ">>>> SOBRE</h2>
-                <div class="tit_construindo_futuro animar">
-                    <h3 class="tit_cima">CONSTRUINDO</h3>
-                    <h3 class="tit_baixo">O FUTURO</h3>
+        
+        <!==== SOBRE E FORMAÇÃO ====>
+
+        <section id="sobre_e_formacao" class="sobre_e_formacao animar">
+            <article class="sobre_completo">
+                <p class="topicos">&gt;&gt; SOBRE</p>
+                <div class="tit_construindo_futuro">
+                    <h2 class="tit_cima">CONSTRUINDO</h2>
+                    <h2 class="tit_baixo">O FUTURO</h2>
                 </div>
-                <div class="sobre_texto animar">
-                    <P class="p_sobre">Sou estudante da Residência Full Stack 5.0, do Instituto Eldorado em parceria com a Petrobras, onde venho desenvolvendo conhecimentos em tecnologia, programação e desenvolvimento de software.</p>
-                    <br>
-                    <p class="p_sobre">Também tenho experiência profissional adquirida durante meu estágio na Carway, onde desenvolvi responsabilidade, organização, comunicação e experiência com rotinas administrativas.</p>
-                    <br>
-                    <p class="p3">Sou uma pessoa curiosa, dedicada e com facilidade para aprender. Gosto de entender como as coisas funcionam, buscar soluções para problemas e transformar ideias em projetos.</P>
+                <div class="sobre_texto">
+                    <p class="p_sobre">
+                        Sou estudante da Residência Full Stack 5.0, do Instituto Eldorado em parceria com a Petrobras, onde venho desenvolvendo conhecimentos em tecnologia, programação e desenvolvimento de software.
+                    </p>
+                    <p class="p_sobre">
+                        Também tenho experiência profissional adquirida durante meu estágio na Carway, onde desenvolvi responsabilidade, organização, comunicação e experiência com rotinas administrativas.
+                    </p>
+                    <p class="p_sobre">
+                        Sou uma pessoa curiosa, dedicada e com facilidade para aprender. Gosto de entender como as coisas funcionam, buscar soluções para problemas e transformar ideias em projetos.
+                    </p>
                 </div>
-            </section>
-            <section class="formacao_sobre animar">
-                <h2 class="topicos animar" style="margin-bottom: 75px; margin-top: 21px;">>> FORMAÇÃO</h2>
-                <hr class="hr1 animar">
-                <div class="formacao1 animar">
+            </article>
+
+            <article class="formacao_sobre">
+                <p class="topicos">&gt;&gt; FORMAÇÃO</p>
+                <hr class="hr1">
+                <div class="formacao_item">
                     <h3 class="empresa_escola">INSTITUTO ELDORADO x PETROBRAS</h3>
-                    <div class="formacao_info animar">
+                    <div class="formacao_info">
                         <p class="pinfo">Residência Full-Stack 5.0</p>
                         <p class="datas">Jun/2026 - Atual</p>
                     </div>
                 </div>
-                <hr class="hr1 animar">
-                <div class="formacao2 animar">
-                    <h3 class="empresa_escola ">ENSINO MÉDIO</h3>
-                    <div class="formacao_info animar">
-                        <p class="pinfo ">Cursando o 3° ano</p>
-                        <p class="datas ">Em andamento</p>
+                <hr class="hr1">
+                <div class="formacao_item">
+                    <h3 class="empresa_escola">ENSINO MÉDIO</h3>
+                    <div class="formacao_info">
+                        <p class="pinfo">Cursando o 3° ano</p>
+                        <p class="datas">Em andamento</p>
                     </div>
                 </div>
-                <hr class="hr1 animar">
-                <div class="formacao3 animar">
-                    <h3 class="empresa_escola ">WIZARD</h3>
-                    <div class="formacao_info animar">
-                        <p class="pinfo ">Inglês - Nível B2</p>
-                        <p class="datas ">2021 - 2025</p>
+
+                <hr class="hr1">
+
+                <div class="formacao_item">
+                    <h3 class="empresa_escola">WIZARD</h3>
+                    <div class="formacao_info">
+                        <p class="pinfo">Inglês - Nível B2</p>
+                        <p class="datas">2021 - 2025</p>
                     </div>
                 </div>
-                <hr class="hr1 animar">
-                <div class="animar">
-                    <h3 class="status ">> status</h3>
-                    <h4 class="abertoopr ">
-                        <ul type="disk">
-                            <li>ABERTO_A_OPORTUNIDADES</li>
-                        </ul>
-                    </h4>
+
+                <hr class="hr1">
+
+                <div class="status_formacao">
+                    <p class="status">&gt; status</p>
+                    <p class="abertoopr">ABERTO_A_OPORTUNIDADES</p>
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
 
         <hr class="hr animar">
 
-        <article class="animar">
-            <h2 id="hab" class="animar">>>> HABILIDADES</h2>
+        <!===== HABILIDADES ======>
 
-            <div class="titulos animar">
-                <h3 class="tit_cima ">TECH</h3>
-                <h3 class="tit_baixo ">STACK</h3>
+        <section id="hab" class="habilidades animar">
+            <p class="topicos">&gt;&gt; HABILIDADES</p>
+            <div class="titulos">
+                <h2 class="tit_cima">TECH</h2>
+                <h2 class="tit_baixo">STACK</h2>
             </div>
-
             <div class="skills_grid">
-                <div class="front">
-                    <h4 class="nome_tech">FRONTEND</h4>
+                <article class="skill_categoria">
+                    <h3 class="nome_tech">FRONTEND</h3>
                     <ul>
                         <li>HTML5</li>
                         <li>CSS3</li>
                     </ul>
-                </div>
-
-                <div class="back">
-                    <h4 class="nome_tech">BACKEND</h4>
+                </article>
+                <article class="skill_categoria">
+                    <h3 class="nome_tech">BACKEND</h3>
                     <ul>
                         <li>Java</li>
                     </ul>
-                </div>
-
-                <div class="banco">
-                    <h4 class="nome_tech">BANCO DE DADOS</h4>
+                </article>
+                <article class="skill_categoria">
+                    <h3 class="nome_tech">BANCO DE DADOS</h3>
                     <ul>
-                    <li>PostgreSQL</li>
+                        <li>PostgreSQL</li>
                     </ul>
-                    </div>
-
-                <div class="tools">
-                    <h4 class="nome_tech">FERRAMENTAS</h4>
+                </article>
+                <article class="skill_categoria">
+                    <h3 class="nome_tech">FERRAMENTAS</h3>
                     <ul>
                         <li>Git</li>
                         <li>GitHub</li>
@@ -138,18 +149,16 @@
                         <li>Pacote Office</li>
                         <li>Excel</li>
                     </ul>
-                </div>
-
-                <div class="fundamentos">
-                    <h4 class="nome_tech">FUNDAMENTOS</h4>
+                </article>
+                <article class="skill_categoria skill_full">
+                    <h3 class="nome_tech">FUNDAMENTOS</h3>
                     <ul>
                         <li>Lógica de Programação</li>
                         <li>Sistemas Administrativos</li>
                     </ul>
-                </div>
-
-                <div class="comportamentais">
-                    <h4 class="nome_tech">COMPORTAMENTAIS</h4>
+                </article>
+                <article class="skill_categoria skill_full">
+                    <h3 class="nome_tech">COMPORTAMENTAIS</h3>
                     <ul>
                         <li>Comunicação</li>
                         <li>Trabalho em equipe</li>
@@ -159,33 +168,27 @@
                         <li>Resolução de problemas</li>
                         <li>Adaptabilidade</li>
                     </ul>
-                </div>
+                </article>
             </div>
-        </article>
+        </section>
 
-<<<<<<< HEAD
-=======
-        <section class="animar">
-            <div class="nivel_tecnico_tabela">
+        <hr class="hr animar">
 
-                <h2>NÍVEL TÉCNICO</h2>
+        <!===== NÍVEL TÉCNICO ======>
 
-                <table>
-                    <tr>
-                        <th>Habilidades</th>
-                        <th>Barra</th>
-                    </tr>
-
+        <section class="nivel_tecnico_tabela animar">
+            <p class="topicos">&gt;&gt; NÍVEL TÉCNICO</p>
+            <table>
+                <tbody>
                     <tr>
                         <td>HTML5</td>
-                        <td style="width: 85%;">
+                        <td>
                             <div class="barra">
                                 <div class="progresso html"></div>
                             </div>
                         </td>
-                    
+                        <td>70%</td>
                     </tr>
-
                     <tr>
                         <td>CSS3</td>
                         <td>
@@ -193,71 +196,70 @@
                                 <div class="progresso css"></div>
                             </div>
                         </td>
-                        
+                        <td>50%</td>
                     </tr>
-
                     <tr>
-                        <td>Java</td>
+                        <td>JAVA</td>
                         <td>
                             <div class="barra">
                                 <div class="progresso java_nivel"></div>
                             </div>
                         </td>
-                        
+                        <td>20%</td>
                     </tr>
-
                     <tr>
-                        <td>PostgreSQL</td>
+                        <td>POSTGRESQL</td>
                         <td>
                             <div class="barra">
                                 <div class="progresso postgres"></div>
                             </div>
                         </td>
-                    </tr>    
-            
+                        <td>30%</td>
+                    </tr>
                     <tr>
-                        <td>Git / GitHub</td>
+                        <td>GIT / GITHUB</td>
                         <td>
                             <div class="barra">
                                 <div class="progresso git"></div>
                             </div>
                         </td>
+                        <td>60%</td>
                     </tr>
-
                     <tr>
-                        <td>Pacote Office</td>
+                        <td>PACOTE OFFICE</td>
                         <td>
                             <div class="barra">
                                 <div class="progresso office"></div>
                             </div>
                         </td>
+                        <td>75%</td>
                     </tr>
-                </table>
-
-            </div>  
+                </tbody>
+            </table>
         </section>
 
->>>>>>> 2c806f8 (Refatorada página de projetos, adicionada página do detector de golpes, responsividade para mobile no cabeçalho e refatoração em styles.css)
         <hr class="hr animar">
 
-        <article id="experiencia" class="animar">
-            <h2 class="topicos">>>> EXPERIÊNCIA</h2>
+        <!===== EXPERIÊNCIA =====>
+
+        <section id="experiencia" class="experiencia animar">
+            <p class="topicos">&gt;&gt; EXPERIÊNCIA</p>
             <div class="experiencia_titulo">
-                <h3 class="tit_cima">EXPERIÊNCIA</h3>
-                <h3 class="tit_baixo">PROFISSIONAL</h3>
+                <h2 class="tit_cima">EXPERIÊNCIA</h2>
+                <h2 class="tit_baixo">PROFISSIONAL</h2>
             </div>
+
             <hr class="hr_exp">
-            <div class="experiencia_conteudo animar">
+
+            <article class="experiencia_conteudo">
                 <div class="exp_cabecalho">
                     <div class="exp_empresa">
-                        <h4 class="tit_exp">CARWAY HYUNDAI</h4>
+                        <h3 class="tit_exp">CARWAY HYUNDAI</h3>
                         <span class="setor_exp">Pós-vendas</span>
                     </div>
                     <p class="data_exp">Fev/2025 - Jun/2026</p>
                 </div>
-                <h5 class="funcao_exp">
-                    Auxiliar administrativo (Estágio)
-                </h5>
+                <h4 class="funcao_exp">Auxiliar administrativo (Estágio)</h4>
                 <ul class="tasks_exp">
                     <li>Suporte às rotinas administrativas do setor de pós-vendas</li>
                     <li>Organização e controle de documentos e processos</li>
@@ -265,37 +267,46 @@
                     <li>Participação nos processos de garantia automotiva</li>
                     <li>Elaboração de planilhas e relatórios no Excel</li>
                 </ul>
-            </div>
-            <hr class="hr_exp animar" >
-            <div class="experiencia_conteudo animar">
+            </article>
+
+            <hr class="hr_exp">
+
+            <article class="experiencia_conteudo">
                 <div class="exp_cabecalho">
                     <div class="exp_empresa">
-                        <h4 class="tit_exp">TÉCNICO DE INFORMÁTICA</h4>
+                        <h3 class="tit_exp">TÉCNICO DE INFORMÁTICA</h3>
                         <span class="setor_exp">Freelance</span>
                     </div>
                     <p class="data_exp">2023 - Atualmente</p>
                 </div>
-                <h5 class="funcao_exp">Autônomo</h5>
+                <h4 class="funcao_exp">Autônomo</h4>
                 <ul class="tasks_exp">
                     <li>Formatação de computadores</li>
                     <li>Instalação de sistema operacional e softwares</li>
                     <li>Otimização de desempenho</li>
                     <li>Atualização de hardware</li>
                 </ul>
-            </div>
+            </article>
+
             <hr class="hr_exp">
-        </article>
-        
+
+        </section>
+
         <hr class="hr animar">
 
-        <section id="contato" class="animar" >
-            <h2 class="topicos">>>> CONTACT</h2>
+        <!===== CONTATO =====>
+
+        <section id="contato" class="contato animar">
+            <p class="topicos">&gt;&gt; CONTACT</p>
             <div class="Contato_titulo">
-                <h3 class="tit_cima">LET'S</h3>
-                <h3 class="tit_baixo">CONNECT</h3>
+                <h2 class="tit_cima">LET'S</h2>
+                <h2 class="tit_baixo">CONNECT</h2>
             </div>
-            <p class="contato_descricao">Aberto a oportunidades de emprego, estágios e projetos interessantes.</p>
+            <p class="contato_descricao">
+                Aberto a oportunidades de emprego, estágios e projetos interessantes.
+            </p>
             <div class="contato_info">
+
                 <div class="contato_linha">
                     <span>TELEFONE</span>
                     <span>(51) 9 98334850</span>
@@ -306,45 +317,47 @@
                 </div>
                 <div class="contato_linha">
                     <span>GITHUB</span>
-                    <a href="https://github.com/gustavows17" target="_blank" rel="noopener">github.com/gustavows17</a>
+                    <a href="https://github.com/gustavows17" target="_blank" rel="noopener noreferrer">
+                        github.com/gustavows17
+                    </a>
                 </div>
                 <div class="contato_linha">
                     <span>LINKEDIN</span>
-                    <a href="https://www.linkedin.com/in/gustavo-westphal-skorek/" target="_blank" rel="noopener">linkedin.com/in/gustavo-westphal-skorek</a>
+                    <a href="https://www.linkedin.com/in/gustavo-westphal-skorek/" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/gustavo-westphal-skorek
+                    </a>
                 </div>
+
             </div>
         </section>
+
     </main>
 
-    <footer id="rodape" class="animar">
+    <!===== RODAPÉ =====>
+
+    <footer id="rodape">
         <span>// GUSTAVO_WESTPHAL_SKOREK @ 2026 - TODOS OS DIREITOS RESERVADOS</span>
-        <span>BUILT_WITH &ltRED_AND_DETERMINATION&gt</span>
+        <span>BUILT_WITH &lt;RED_AND_DETERMINATION&gt;</span>
     </footer>
 
+    <!==== ANIMAÇÕES ====>
     <script>
-    const elementos = document.querySelectorAll(".animar");
+        const elementos = document.querySelectorAll(".animar");
 
-    const observer = new IntersectionObserver((elementos) => {
-
-        elementos.forEach((elemento) => {
-
-            if (elemento.isIntersecting) {
-
-                elemento.target.classList.add("visivel");
-
-            }
-
+        const observer = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("visivel");
+                }
+            });
+        }, {
+            threshold: 0.15
         });
 
-    }, {
-        threshold: 0.15
-    });
-
-
-    elementos.forEach((elemento) => {
-        observer.observe(elemento);
-    });
-
+        elementos.forEach((elemento) => {
+            observer.observe(elemento);
+        });
     </script>
+
 </body>
 </html>
