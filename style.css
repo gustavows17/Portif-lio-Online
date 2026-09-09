@@ -93,14 +93,8 @@ h3 {
     border-bottom: 1px solid #3333338e;
 }
 
-.Logo_cabecalho {
-    color: var(--cor-texto);
-    font-family: monospace;
-    font-size: 0.9rem;
-}
-
-.Logo_cabecalho h1 {
-    margin: 0;
+.img-logo {
+    max-width: 70px;
 }
 
 .Menu_cabecalho {
@@ -165,16 +159,26 @@ h3 {
     margin-bottom: 100px;
     color: var(--cor-texto);
     font-family: "Orbitron", sans-serif;
-    font-size: 8rem;
-    font-weight: 800;
-    line-height: 0.95;
+    font-size: clamp(5rem, 11vw, 10rem);
+    font-weight: 900;
+    line-height: 0.82;
+    letter-spacing: -5px;
     animation: aparecerNome 1s ease-out;
 }
 
 .name span {
-    padding: 0 5px;
+    display: inline-block;
+    padding: 0 10px;
     background-color: var(--cor-principal);
     color: black;
+    box-shadow: 8px 8px 0 #000;
+}
+
+.name strong {
+    display: block;
+    margin-left: 60px;
+    color: var(--cor-texto);
+    font-weight: 900;
 }
 
 .introducao {
@@ -239,12 +243,18 @@ h3 {
     line-height: 1;
 }
 
+.tit_construindo_futuro .tit_cima,
+.tit_construindo_futuro .tit_baixo,
+.Contato_titulo .tit_cima,
+.Contato_titulo .tit_baixo {
+    margin-bottom: 0;
+    line-height: 0.9;
+}
 .tit_cima {
     color: var(--cor-texto);
 }
 
 .tit_baixo {
-    margin-top: -20px;
     color: var(--cor-principal);
     font-family: "Futuro", sans-serif;
 }
@@ -265,7 +275,7 @@ h3 {
 /*===== FORMAÇÃO =====*/
 
 .formacao_sobre {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .formacao_sobre > .topicos {
@@ -355,7 +365,7 @@ h3 {
     margin-bottom: 20px;
     color: gray;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .skills_grid ul {
@@ -372,93 +382,13 @@ h3 {
     border: 1px solid var(--cor-borda);
     color: gray;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .skills_grid li:hover {
     color: var(--cor-principal);
     border-color: var(--cor-principal);
-}
-
-
-/*==== NÍVEL TÉCNICO ====*/
-
-.nivel_tecnico_tabela {
-    width: var(--largura-conteudo);
-    margin: 100px auto;
-}
-
-.nivel_tecnico_tabela .topicos {
-    margin-bottom: 35px;
-}
-
-.nivel_tecnico_tabela table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.nivel_tecnico_tabela td {
-    padding: 12px 0;
-    color: gray;
-    font-family: monospace;
-    font-size: 1rem;
-}
-
-.nivel_tecnico_tabela td:first-child {
-    width: 180px;
-    color: var(--cor-texto);
-}
-
-.nivel_tecnico_tabela td:nth-child(2) {
-    width: 60%;
-    padding: 0 30px;
-}
-
-.nivel_tecnico_tabela td:last-child {
-    width: 80px;
-    color: var(--cor-principal);
-    font-weight: bold;
-    text-align: right;
-}
-
-.barra {
-    width: 100%;
-    height: 2px;
-    overflow: hidden;
-    background-color: #292929;
-}
-
-.progresso {
-    width: 0;
-    height: 100%;
-    background-color: var(--cor-principal);
-    transform-origin: left;
-    transition: width 1.2s ease;
-}
-
-.html {
-    width: 70%;
-}
-
-.css {
-    width: 50%;
-}
-
-.java_nivel {
-    width: 20%;
-}
-
-.postgres {
-    width: 30%;
-}
-
-.git {
-    width: 60%;
-}
-
-.office {
-    width: 75%;
 }
 
 
@@ -500,7 +430,7 @@ h3 {
     margin: 0;
     color: var(--cor-texto);
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .setor_exp {
@@ -508,21 +438,21 @@ h3 {
     border: 1px solid var(--cor-borda);
     color: #555;
     font-family: monospace;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .data_exp {
     margin: 0;
     color: #555;
     font-family: monospace;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .funcao_exp {
     margin: 15px 0;
     color: #555;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
 }
 
@@ -536,7 +466,7 @@ h3 {
     margin-bottom: 8px;
     color: #555;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .tasks_exp li::before {
@@ -561,7 +491,7 @@ h3 {
     margin-bottom: 45px;
     color: gray;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -578,7 +508,7 @@ h3 {
     border-bottom: 1px solid #222;
     color: #555;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .contato_linha > span:first-child {
@@ -611,7 +541,7 @@ footer {
     border-top: 1px solid #222;
     color: rgba(128, 128, 128, 0.537);
     font-family: monospace;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 

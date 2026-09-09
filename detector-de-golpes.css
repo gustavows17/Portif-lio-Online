@@ -34,7 +34,7 @@
     max-width:700px;
     color:gray;
     font-family:monospace;
-    font-size:1.1rem;
+    font-size:1.3rem;
     line-height:1.7;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .projeto-imagem img{
-    width:100%;
+    width:90%;
     display:block;
     border:1px solid #333;
 }
@@ -79,7 +79,7 @@
 .projeto-sobre p:not(.topicos){
     color:gray;
     font-family:sans-serif;
-    font-size:1.1rem;
+    font-size:1.2rem;
     line-height:1.8;
 }
 
@@ -113,14 +113,14 @@
 .funcionalidade span{
     color:red;
     font-family:monospace;
-    font-size:0.9rem;
+    font-size:1.5rem;
 }
 
 .funcionalidade h3{
     margin:20px 0 15px;
     color:white;
     font-family:monospace;
-    font-size:1.2rem;
+    font-size:1.8rem;
 }
 
 .funcionalidade p{
@@ -151,7 +151,7 @@
     color:gray;
     padding:10px 15px;
     font-family:monospace;
-    font-size:0.9rem;
+    font-size:1.2rem;
     transition:0.3s ease;
 }
 
@@ -185,14 +185,14 @@
 .estrutura-item span{
     color:red;
     font-family:monospace;
-    font-size:0.9rem;
+    font-size:1.5rem;
 }
 
 .estrutura-item h3{
     margin:15px 0;
     color:white;
     font-family:monospace;
-    font-size:1.2rem;
+    font-size:1.8rem;
 }
 
 .estrutura-item p{
@@ -215,7 +215,7 @@
 .projeto-objetivo p:last-child{
     color:gray;
     font-family:sans-serif;
-    font-size:1.1rem;
+    font-size:1.3rem;
     line-height:1.8;
 }
 
@@ -230,6 +230,7 @@
     border:1px solid red;
     color:red;
     font-family:monospace;
+    font-size: 0.9rem;
     transition:0.3s ease;
 }
 
