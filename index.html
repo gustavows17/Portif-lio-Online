@@ -6,12 +6,11 @@
     <meta name="description" content="Portfólio de Gustavo Westphal Skorek">
     <meta name="author" content="Gustavo Westphal Skorek">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfólio - Gustavo Westphal Skorek</title>
 </head>
 <body>
-
-    <!===== CABEÇALHO ======>
 
     <header id="Cabecalho">
         <div class="Logo_cabecalho">
@@ -29,31 +28,33 @@
 
     <main>
 
-        <!===== APRESENTAÇÃO ======>
-
         <section id="Apresentacao_completa">
-            <div class="apresentacao">
-                <h2 class="welcome">OLÁ, EU SOU</h2>
-                <h1 class="name">
-                <span>GUSTAVO</span> <br>
-                <strong>WESTPHAL</strong>
-                </h1>
-            </div>
-            <div class="introducao">
-                <p class="p">Desenvolvedor em formação | Full Stack</p>
+            <div class="hero-copy">
+                <div class="apresentacao">
+                    <h2 class="welcome">OLÁ, EU SOU</h2>
+                    <h1 class="name">
+                        <span>GUSTAVO</span>
+                        <strong>WESTPHAL</strong>
+                    </h1>
+                </div>
+                <div class="introducao">
+                    <p class="p">Desenvolvedor em formação | Full Stack</p>
 
-                <div class="botoes">
-                    <a class="botaoinf" href="#experiencia">VER_EXPERIÊNCIA</a>
-                    <a class="botaoinf" href="#contato">CONTATO</a>
-                    <a class="botaoinf" href="projetos.html">VER_PROJETOS</a>
+                    <div class="botoes">
+                        <a class="botaoinf" href="#experiencia">VER_EXPERIÊNCIA</a>
+                        <a class="botaoinf" href="#contato">CONTATO</a>
+                        <a class="botaoinf" href="projetos.html">VER_PROJETOS</a>
+                    </div>
                 </div>
             </div>
+
+            <figure class="hero-photo">
+                <span class="hero-photo-glow" aria-hidden="true"></span>
+                <img src="img/gustavo-hero.png" alt="Retrato de Gustavo Westphal Skorek" width="580" height="929" fetchpriority="high">
+            </figure>
         </section>
 
         <hr class="hr">
-
-        
-        <!==== SOBRE E FORMAÇÃO ====>
 
         <section id="sobre_e_formacao" class="sobre_e_formacao animar">
             <article class="sobre_completo">
@@ -115,8 +116,6 @@
 
         <hr class="hr animar">
 
-        <!===== HABILIDADES ======>
-
         <section id="hab" class="habilidades animar">
             <p class="topicos">&gt;&gt; HABILIDADES</p>
             <div class="titulos">
@@ -127,30 +126,30 @@
                 <article class="skill_categoria">
                     <h3 class="nome_tech">FRONTEND</h3>
                     <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
+                        <li><i class="devicon devicon-html5-plain colored" aria-hidden="true"></i>HTML5</li>
+                        <li><i class="devicon devicon-css3-plain colored" aria-hidden="true"></i>CSS3</li>
                     </ul>
                 </article>
                 <article class="skill_categoria">
                     <h3 class="nome_tech">BACKEND</h3>
                     <ul>
-                        <li>Java</li>
+                        <li><i class="devicon devicon-java-plain colored" aria-hidden="true"></i>Java</li>
                     </ul>
                 </article>
                 <article class="skill_categoria">
                     <h3 class="nome_tech">BANCO DE DADOS</h3>
                     <ul>
-                        <li>PostgreSQL</li>
+                        <li><i class="devicon devicon-postgresql-plain colored" aria-hidden="true"></i>PostgreSQL</li>
                     </ul>
                 </article>
                 <article class="skill_categoria">
                     <h3 class="nome_tech">FERRAMENTAS</h3>
                     <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Pacote Office</li>
-                        <li>Excel</li>
+                        <li><i class="devicon devicon-git-plain colored" aria-hidden="true"></i>Git</li>
+                        <li><i class="devicon devicon-github-original colored" aria-hidden="true"></i>GitHub</li>
+                        <li><i class="devicon devicon-vscode-plain colored" aria-hidden="true"></i>VS Code</li>
+                        <li><span class="skill-icon" aria-hidden="true">▦</span>Pacote Office</li>
+                        <li><span class="skill-icon" aria-hidden="true">▤</span>Excel</li>
                     </ul>
                 </article>
                 <article class="skill_categoria skill_full">
@@ -176,9 +175,6 @@
         </section>
 
         <hr class="hr animar">
-
-
-        <!===== EXPERIÊNCIA =====>
 
         <section id="experiencia" class="experiencia animar">
             <p class="topicos">&gt;&gt; EXPERIÊNCIA</p>
@@ -232,8 +228,6 @@
 
         <hr class="hr animar">
 
-        <!===== CONTATO =====>
-
         <section id="contato" class="contato animar">
             <p class="topicos">&gt;&gt; CONTACT</p>
             <div class="Contato_titulo">
@@ -271,14 +265,11 @@
 
     </main>
 
-    <!===== RODAPÉ =====>
-
     <footer id="rodape">
         <span>// GUSTAVO_WESTPHAL_SKOREK @ 2026 - TODOS OS DIREITOS RESERVADOS</span>
         <span>BUILT_WITH &lt;RED_AND_DETERMINATION&gt;</span>
     </footer>
 
-    <!==== ANIMAÇÕES ====>
     <script>
         const elementos = document.querySelectorAll(".animar");
 

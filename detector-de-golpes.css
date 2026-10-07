@@ -1,18 +1,9 @@
 @charset "UTF-8";
 
-/* =========================
-   PÁGINA DO PROJETO
-========================= */
-
 .pagina-detalhe-projeto{
     width:min(1200px,90%);
     margin:160px auto 100px;
 }
-
-
-/* =========================
-   CABEÇALHO DO PROJETO
-========================= */
 
 .projeto-cabecalho{
     margin-bottom:80px;
@@ -38,11 +29,6 @@
     line-height:1.7;
 }
 
-
-/* =========================
-   IMAGEM PRINCIPAL
-========================= */
-
 .projeto-imagem{
     margin-bottom:120px;
 }
@@ -52,11 +38,6 @@
     display:block;
     border:1px solid #333;
 }
-
-
-/* =========================
-   SOBRE O PROJETO
-========================= */
 
 .projeto-sobre{
     max-width:800px;
@@ -82,11 +63,6 @@
     font-size:1.2rem;
     line-height:1.8;
 }
-
-
-/* =========================
-   FUNCIONALIDADES
-========================= */
 
 .projeto-funcionalidades{
     margin-bottom:120px;
@@ -130,11 +106,6 @@
     line-height:1.6;
 }
 
-
-/* =========================
-   TECNOLOGIAS
-========================= */
-
 .projeto-tecnologias{
     margin-bottom:120px;
 }
@@ -160,11 +131,6 @@
     border-color:red;
     transform:translateY(-3px);
 }
-
-
-/* =========================
-   ESTRUTURA DO PROJETO
-========================= */
 
 .projeto-estrutura{
     margin-bottom:120px;
@@ -202,11 +168,6 @@
     line-height:1.6;
 }
 
-
-/* =========================
-   OBJETIVO
-========================= */
-
 .projeto-objetivo{
     max-width:800px;
     margin-bottom:80px;
@@ -218,11 +179,6 @@
     font-size:1.3rem;
     line-height:1.8;
 }
-
-
-/* =========================
-   BOTÃO VOLTAR
-========================= */
 
 .botao-voltar{
     display:inline-block;
@@ -238,11 +194,6 @@
     background-color:red;
     color:black;
 }
-
-
-/* =========================
-   RESPONSIVIDADE
-========================= */
 
 @media(max-width:768px){
 
@@ -269,4 +220,31 @@
         margin-bottom:80px;
     }
 
+}
+
+:root { --cor-principal: #ff3038; }
+.pagina-detalhe-projeto { width: min(1160px, calc(100% - 48px)); }
+.projeto-cabecalho p:last-child, .projeto-sobre p:not(.topicos), .estrutura-item p,
+.funcionalidade p, .projeto-objetivo p:last-child { color: #a4a6ad; }
+.projeto-imagem img { width: 100%; border-radius: 14px; }
+.funcionalidade { border-radius: 12px; background: rgba(255,255,255,.02); }
+.botao-voltar { margin: 0 8px 10px 0; border-radius: 6px; }
+
+@media(max-width: 700px) {
+    .pagina-detalhe-projeto { width: calc(100% - 36px); margin: 112px auto 64px; }
+    .projeto-cabecalho { margin-bottom: 42px; }
+    .projeto-cabecalho h1 { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+    .projeto-cabecalho p:last-child { font-size: 1rem; }
+    .projeto-imagem { margin-bottom: 64px; }
+    .projeto-sobre h2 { font-size: clamp(2.2rem, 9vw, 3.4rem); }
+    .projeto-sobre p:not(.topicos), .projeto-objetivo p:last-child { font-size: 1rem; }
+    .funcionalidades-grid, .estrutura-grid { grid-template-columns: 1fr; gap: 12px; }
+    .funcionalidade { padding: 22px; }
+    .funcionalidade h3, .estrutura-item h3 { font-size: 1.3rem; }
+    .projeto-tecnologias .tecnologias span { font-size: .9rem; }
+    .botao-voltar { display: block; width: 100%; margin-right: 0; text-align: center; }
+}
+
+@media(max-width: 380px) {
+    .pagina-detalhe-projeto { width: calc(100% - 32px); }
 }

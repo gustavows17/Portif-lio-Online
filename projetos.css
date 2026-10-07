@@ -28,8 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-/*==== CABEÇALHO ====*/
-
 #Cabecalho {
     position: fixed;
     top: 0;
@@ -78,16 +76,10 @@ body {
     object-fit: contain;
 }
 
-
-/*==== PÁGINA ====*/
-
 .pagina-projetos {
     width: var(--largura-conteudo);
     margin: 170px auto 100px;
 }
-
-
-/*==== INTRODUÇÃO ====*/
 
 .projetos-intro {
     margin-bottom: 100px;
@@ -119,9 +111,6 @@ body {
     font-size: 1.3rem;
     line-height: 1.6;
 }
-
-
-/*===== PROJETO =====*/
 
 .projeto {
     display: grid;
@@ -176,8 +165,6 @@ body {
     line-height: 1.7;
 }
 
-/*===== TECNOLOGIAS =====*/
-
 .tecnologias {
     display: flex;
     flex-wrap: wrap;
@@ -198,8 +185,6 @@ body {
     background: var(--cor-principal);
     color: black;
 }
-
-/*===== BOTÕES =====*/
 
 .botoes-projeto {
     display: flex;
@@ -238,9 +223,6 @@ body {
     color: black;
 }
 
-
-/*===== IMAGEM =====*/
-
 .projeto-imagem {
     order: 2;
     overflow: hidden;
@@ -261,9 +243,6 @@ body {
     transform: scale(1.03);
 }
 
-
-/*===== RODAPÉ =====*/
-
 footer {
     padding: 30px 5%;
 
@@ -274,9 +253,6 @@ footer {
     text-align: center;
     font-size: 1rem;
 }
-
-
-/*===== RESPONSIVIDADE =====*/
 
 @media (max-width: 768px) {
     #Cabecalho {
@@ -348,4 +324,50 @@ footer {
         width: 100%;
         text-align: center;
     }
+}
+
+:root { --cor-principal: #ff3038; --cor-borda: #292b31; --largura-conteudo: min(1160px, calc(100% - 48px)); }
+body { background: radial-gradient(ellipse at 82% 12%, rgba(255,48,56,.08), transparent 32rem), #08090b; }
+#Cabecalho { min-height: 76px; padding-inline: max(24px, calc((100% - 1200px) / 2)); background: rgba(8,9,11,.9); border-bottom-color: rgba(255,255,255,.09); }
+.img-logo { max-width: 54px; }
+.botao_menu { border-radius: 8px; }
+.pagina-projetos { margin-top: 150px; }
+.projetos-intro { margin-bottom: 70px; }
+.projetos-intro > p:last-child, .descricao { color: #a4a6ad; }
+.projeto { gap: clamp(32px, 6vw, 76px); padding-block: 54px; }
+.projeto-imagem { border-radius: 14px; background: #111; }
+.projeto-imagem img { aspect-ratio: 16 / 10; object-fit: cover; }
+.numero-projeto { display: inline-block; padding: 8px 12px; border: 1px solid rgba(255,48,56,.35); border-radius: 999px; background: rgba(255,48,56,.08); }
+.tecnologias span { border-radius: 6px; color: #d0d0d4; }
+.botao-codigo, .botao-detalhes { border-radius: 6px; }
+
+@media (max-width: 900px) {
+    #Cabecalho { padding-inline: 20px; }
+    .projeto { gap: 28px; }
+}
+
+@media (max-width: 700px) {
+    #Cabecalho { min-height: 70px; flex-direction: row; justify-content: space-between; gap: 10px; padding: 8px 14px; }
+    .img-logo { max-width: 42px; }
+    .Menu_cabecalho { min-width: 0; }
+    .botao_menu { padding: 9px 12px; font-size: .72rem; }
+    .pagina-projetos { width: calc(100% - 36px); margin-top: 116px; }
+    .projetos-intro { margin-bottom: 46px; }
+    .projetos-intro h1 { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+    .projetos-intro > p:last-child { font-size: 1rem; }
+    .projeto { grid-template-columns: 1fr; gap: 26px; padding-block: 30px; }
+    .projeto-imagem { order: 1; }
+    .projeto-info { order: 2; }
+    .projeto-info h2 { font-size: clamp(2.1rem, 10vw, 3.7rem); }
+    .descricao { font-size: 1rem; }
+    .botoes-projeto { gap: 8px; }
+    footer { font-size: .82rem; }
+}
+
+@media (max-width: 380px) {
+    :root { --largura-conteudo: calc(100% - 32px); }
+    .pagina-projetos { width: calc(100% - 32px); }
+    .projetos-intro h1 { font-size: 2.7rem; }
+    .botoes-projeto { flex-direction: column; }
+    .botao-codigo, .botao-detalhes { width: 100%; text-align: center; }
 }
